@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('AddSub') {
             steps {
-                sh 'python -m unittest tests.TestAddSub'
+                bat 'python -m unittest tests.TestAddSub'
             }
         }
         stage('MulDiv') {
             steps {
-                sh 'python -m unittest tests.TestMulDiv'
+                bat 'python -m unittest tests.TestMulDiv'
             }
         }
     }
