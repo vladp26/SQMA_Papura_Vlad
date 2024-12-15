@@ -1,7 +1,7 @@
 import unittest
 from functions import *
 
-class Test(unittest.TestCase):
+class TestAddSub(unittest.TestCase):
     def setUp(self):
         self.a = 20
         self.b = 10
@@ -13,6 +13,12 @@ class Test(unittest.TestCase):
     def test_sub(self):
         result = subtract(self.a, self.b)
         self.assertEqual(result, 10)
+
+
+class TestMulDiv(unittest.TestCase):
+    def setUp(self):
+        self.a = 20
+        self.b = 10
 
     def test_mul(self):
         result = multiply(self.a, self.b)
